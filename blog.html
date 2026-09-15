@@ -13,7 +13,7 @@
   <nav>
     <div class="logo">Glow Inside Out</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="#" class="active">Blog</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Resources</a></li>
@@ -27,76 +27,20 @@
     <p>Quiet reflections on self-care, growth, and living a little more gently.</p>
   </section>
 
-  <div class="filters">
-    <button class="filter active">All</button>
-    <button class="filter">Self-care</button>
-    <button class="filter">Growth</button>
-    <button class="filter">Mindset</button>
-    <button class="filter">Journaling</button>
+  <div class="filters" id="filters">
+    <button class="filter active" data-cat="">All</button>
   </div>
 
-  <div class="grid">
-    <div class="card">
-      <div class="card-img a">self-care</div>
-      <div class="card-body">
-        <div class="card-cat">Self-care</div>
-        <h3>The art of doing less, gently</h3>
-        <p>On slowing down without guilt, and why rest is not something to earn.</p>
-        <div class="card-meta">March 4 · 4 min read</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img b">growth</div>
-      <div class="card-body">
-        <div class="card-cat">Growth</div>
-        <h3>Small habits that quietly change you</h3>
-        <p>You don't need a five-year plan — just one honest choice today.</p>
-        <div class="card-meta">Feb 26 · 5 min read</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img c">mindset</div>
-      <div class="card-body">
-        <div class="card-cat">Mindset</div>
-        <h3>Making peace with an ordinary day</h3>
-        <p>Not every day needs to be productive to be worth living well.</p>
-        <div class="card-meta">Feb 19 · 3 min read</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img d">journaling</div>
-      <div class="card-body">
-        <div class="card-cat">Journaling</div>
-        <h3>Three prompts for a heavy week</h3>
-        <p>Gentle questions to return to whenever your mind feels full.</p>
-        <div class="card-meta">Feb 11 · 4 min read</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img a">self-care</div>
-      <div class="card-body">
-        <div class="card-cat">Self-care</div>
-        <h3>Learning to say no without explaining</h3>
-        <p>A no is a full sentence — practicing boundaries that protect your peace.</p>
-        <div class="card-meta">Feb 3 · 6 min read</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img c">mindset</div>
-      <div class="card-body">
-        <div class="card-cat">Mindset</div>
-        <h3>What comparison is really telling you</h3>
-        <p>Reframing envy as a quiet map toward what you actually want.</p>
-        <div class="card-meta">Jan 27 · 5 min read</div>
-      </div>
-    </div>
+  <div class="grid" id="posts-grid">
+    <p style="grid-column:1/-1; text-align:center; color:#a89c8d;">Loading posts…</p>
   </div>
 
-  <div class="load-more">
-    <a href="#" class="btn outline">Load more posts</a>
+  <div class="load-more" id="load-more-wrap" style="display:none;">
+    <a href="#" class="btn outline" id="load-more-btn">Load more posts</a>
   </div>
 
   <footer>Glow Inside Out · © 2026</footer>
+  <script src="script.js"></script>
 
 </body>
 </html>

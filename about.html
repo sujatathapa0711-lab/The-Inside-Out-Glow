@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Glow Inside Out — About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-hero{ text-align:center; padding:90px 6% 60px; }
+  .about-hero p{ max-width:520px; margin:18px auto 0; color:#6b5f54; line-height:1.8; font-size:1.05rem; }
+
+  .story{
+    max-width:640px; margin:0 auto;
+    padding:20px 6% 90px;
+    text-align:center;
+  }
+  .story p{ color:#5c5045; line-height:1.9; font-size:1.02rem; margin-bottom:22px; }
+  .story p:first-of-type::first-letter{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.6rem; color:#8C9A7F; padding-right:6px; line-height:0.6;
+  }
+
+  .values{
+    background:#F3ECE1;
+    padding:80px 6%;
+  }
+  .values-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:36px;
+    max-width:960px; margin:0 auto;
+  }
+  .value{ text-align:center; }
+  .value-dot{
+    width:44px; height:44px; border-radius:50%;
+    margin:0 auto 18px;
+  }
+  .value-dot.sage{ background:var(--sage); opacity:0.6; }
+  .value-dot.peach{ background:var(--peach); opacity:0.6; }
+  .value-dot.tan{ background:#C7A98C; opacity:0.6; }
+  .value h3{ font-size:1.2rem; margin-bottom:8px; }
+  .value p{ font-size:0.9rem; color:#8a7d6f; line-height:1.6; }
+
+  .founder{
+    text-align:center;
+    padding:90px 6%;
+  }
+  .founder-photo{
+    width:120px; height:120px; border-radius:50%;
+    margin:0 auto 26px;
+    background:linear-gradient(135deg,#E9C6AE,#A9B79C);
+  }
+  .founder h2{ font-size:1.9rem; margin-bottom:12px; }
+  .founder p{ max-width:460px; margin:0 auto; color:#6b5f54; line-height:1.8; }
+  .signature{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.4rem;
+    margin-top:24px;
+    color:#8C9A7F;
+  }
+
+  .cta{
+    text-align:center;
+    padding:70px 6% 100px;
+  }
+  .cta h2{ font-size:1.8rem; margin-bottom:24px; }
+
+  @media (max-width:820px){
+    .values-grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Glow Inside Out</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#" class="active">About</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-hero">
+    <div class="eyebrow-mark"></div>
+    <h1>Our story</h1>
+    <p>A little space for slowing down, reflecting, and growing — one page at a time.</p>
+  </section>
+
+  <section class="story">
+    <p>Glow Inside Out began on a quiet evening, in a notebook, long before it ever became a website. It was simply a place to write down the small realizations that kept life feeling a little lighter.</p>
+    <p>Over time, those private notes turned into something worth sharing — gentle reminders about self-care, growth, and the everyday moments we so often rush past.</p>
+    <p>This blog isn't about having it all figured out. It's about showing up, staying curious, and choosing softness over pressure — one honest post at a time.</p>
+  </section>
+
+  <section class="values">
+    <div class="section-head">
+      <span>what we believe</span>
+      <h2>A few things we hold onto</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value">
+        <div class="value-dot sage"></div>
+        <h3>Slowness</h3>
+        <p>Growth doesn't need to be rushed to be real.</p>
+      </div>
+      <div class="value">
+        <div class="value-dot peach"></div>
+        <h3>Softness</h3>
+        <p>Kindness toward yourself is not a weakness.</p>
+      </div>
+      <div class="value">
+        <div class="value-dot tan"></div>
+        <h3>Honesty</h3>
+        <p>No perfect answers — just honest reflections.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="founder">
+    <div class="founder-photo"></div>
+    <h2>Hi, I'm the voice behind these words</h2>
+    <p>I write from my own experience — the messy middle, the small wins, and everything I'm still learning about being kind to myself.</p>
+    <div class="signature">— with warmth</div>
+  </section>
+
+  <section class="cta">
+    <h2>Come sit with us for a while</h2>
+    <a href="#" class="btn">Explore the blog</a>
+  </section>
+
+  <footer>Glow Inside Out · © 2026</footer>
+
+</body>
+</html>
