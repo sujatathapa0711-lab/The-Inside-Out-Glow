@@ -229,3 +229,157 @@ footer{
   .nav-links{ display:none; }
   .cards, .grid{ grid-template-columns:1fr; }
 }
+
+/* =========================================================
+   Single Blog Post
+   ========================================================= */
+
+.single-post {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.single-post-content {
+  width: 100%;
+}
+
+.single-post-content .card-cat {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.single-post-content h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+  margin: 10px auto 20px;
+  max-width: 750px;
+}
+
+.single-post-content .card-meta {
+  text-align: center;
+  color: #a89c8d;
+  font-size: 0.85rem;
+  margin-bottom: 40px;
+}
+
+.single-post-content > img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+  margin: 30px auto 50px;
+}
+
+.post-content {
+  font-family: "Karla", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #4d463f;
+}
+
+.post-content p {
+  margin: 0 0 1.5em;
+}
+
+.post-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 2em 0 0.7em;
+}
+
+.post-content h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1.8em 0 0.6em;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 35px auto;
+}
+
+.post-content figure {
+  margin: 35px 0;
+}
+
+.post-content figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a89c8d;
+  margin-top: 10px;
+}
+
+.post-content a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 1.2em 0;
+  padding-left: 30px;
+}
+
+.post-content li {
+  margin-bottom: 0.6em;
+}
+
+.post-content blockquote {
+  margin: 35px 0;
+  padding: 10px 25px;
+  border-left: 2px solid #c9bfb2;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #6b6259;
+}
+
+.single-post-content > p:last-child {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.single-post-content > p:last-child a {
+  text-decoration: none;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+  .single-post {
+    padding: 50px 20px;
+  }
+
+  .single-post-content h1 {
+    font-size: 2.7rem;
+  }
+
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .post-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .post-content blockquote {
+    padding-left: 18px;
+    font-size: 1.25rem;
+  }
+
+}
